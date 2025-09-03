@@ -1,2 +1,2 @@
 # Trabajo-en-grupo-Taller-uff-
-Papa (cp lord) Maggi, Marroc (cuck) Marredo, Pajere (yankee fumble) Villarruel, Nacho (Lider) Zuasola, diego (ayiiiii) sniper
+Papa (Cp lord) Maggi, Marroc (Cuck) Marredo, Pajere (Yankee fumble) Villarruel, Nacho (Lider) Zuasola, Diego (Ayiiiii) Sniper
