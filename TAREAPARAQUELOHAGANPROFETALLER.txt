@@ -1,0 +1,49 @@
+git innit /inicializo git
+
+git clone origin -b ramaAri 12345hn URL / estoy clonando desde una rama especifica con el código o id de un commit y la URL del repo 
+
+git config --global user.email "mail@gmail.com"
+
+git status /vemos el estado de los archivos de la carpeta
+
+git add . /guardamos los archivos locales
+
+git commit -m "add: comentario "
+
+
+git push / sube cambios a GitHub
+
+git remote add (nombre ) URLdelRepo  /para vincular mi proyecto local con un repositorio en la Nube 
+
+git branch / es para ver las ramas
+
+puto el que lee
+
+git branch nombreRama 
+
+git checkout nombreRAma / me muevo de una rama a la otra
+
+git Branch -d nobreRama / para eliminar una rama
+
+
+git push --set-upstrean origin nombreRama / es para publicar una rama en github
+
+git fech / actualiza el estado de mi rama local 
+
+git pull origin nombreRama / es para bajar los cambios de la nube al local
+
+git merge origin nombreRama / es para unificar las ramas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
