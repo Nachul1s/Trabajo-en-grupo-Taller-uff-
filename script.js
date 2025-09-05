@@ -59,7 +59,11 @@ class Persona {
   }
 }
 
-const prod1 = new Producto(1, "camisa", "nike", "https://http2.mlstatic.com/D_NQ_NP_2X_661329-MLA49700066534_042022-F.webp", "camisa deportiva", 15000, 10 )
+const prod1 = new Producto(1, "camisa", "nike", "https://http2.mlstatic.com/D_NQ_NP_2X_661329-MLA49700066534_042022-F.webp", "camisa deportiva", 15000, 10)
+const prod2 = new Producto(2, "pantalon", "adidas", "https://http2.mlstatic.com/D_NQ_NP_2X_661329-MLA49700066534_042022-F.webp", "pantalon deportivo", 20000, 5)
+
+
+
 let persona1 = new Persona(
   19,
   "Jeremias",
@@ -68,12 +72,21 @@ let persona1 = new Persona(
   17,
   "Veneco 1512"
 );
+let row = document.querySelector("#rowTarjeta")
 
-let boton = document.createElement("button")
-boton.textContent="Enviar"
-boton.style.backgroundColor="blue"
-boton.style.color="White"
-card.appendChild(row)
+//esto lo voy a borrar
+let boton = document.querySelector("#button")
+// boton.textContent = "Enviar"
+boton.style.backgroundColor = "blue"
+boton.style.color = "White"
+row.appendChild(boton)
+
+boton.addEventListener("click", function () {
+  persona1.agregarProductos(prod1);
+  mostrar();
+});
+//esto tambien 
+
 
 function mostrar() {
   if (subtotal.innerHTML !== 0) {
@@ -114,13 +127,27 @@ function mostrar() {
       persona1.eliminarProducto(x);
       mostrar();
     });
+    /*  let boton = document.createElement("button")
+     boton.textContent="Enviar"
+     boton.style.backgroundColor="blue"
+     boton.style.color="White"
+     row.appendChild(boton)
+     
+     boton.addEventListener("click", function () {
+       persona1.agregarProductos(prod1);
+       mostrar();
+     }); */
+     // esto lo voy a usar  cuando marroc termine
 
     td7.appendChild(botonEliminar);
 
     tr.append(td1, td2, td3, td4, td5, td6, td7);
     tbody.appendChild(tr);
 
-    total.textContent = `total a pagar: $${persona1.calculo()}`
+    // total.textContent = `total a pagar: $${persona1.calculo()}`
 
   });
 }
+let tbody = document.querySelector("#tbody");
+/* let total = document.querySelector("#total");
+let subtotal = document.querySelector("#subtotal");         */
