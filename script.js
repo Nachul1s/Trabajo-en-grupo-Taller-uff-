@@ -3,6 +3,7 @@ const contenedor = document.getElementById ("accordionContenedor") //tomo el div
 
 
 //<------------------CAMPERAS------------------>
+
 //Item
 const itemAcordion = document.createElement ("div") //creo un div con el item del acordeon usando el createElement
 itemAcordion.classList.add ("accordion-item") //le agrego la clase accordion-item con el classList.add
@@ -18,7 +19,7 @@ desplegarAcordion.classList.add ("accordion-button") //le agrego la clase accord
 desplegarAcordion.classList.add ("collapsed") //le agrego la clase collapsed con el classList.add para que se despliegue el acordeon
 desplegarAcordion.type = "button" //le doy la propiedad de boton al despliegue del acordeon con el type = "button"
 desplegarAcordion.setAttribute ("data-bs-toggle", "collapse") //le agrego el atributo collapse con el data-bs-toggle para desplegar el acordeon usando un setAttribute 
-desplegarAcordion.setAttribute ("data-bs-target", "#collapseThree") //le agrego el id collapseTwo con el data-bs-target para especificar el id del acoredeon a despleguar usando un setAttribute
+desplegarAcordion.setAttribute ("data-bs-target", "#collapseThree") //le agrego el id collapseThree con el data-bs-target para especificar el id del acoredeon a despleguar usando un setAttribute
 desplegarAcordion.innerText = "Camperas" //le doy el titulo al acordeon con el innerText
 //Main
 const mainAcordion = document.createElement ("div") //creo un div main con el createElement
@@ -62,7 +63,7 @@ desplegarAcordion2.classList.add ("accordion-button") //le agrego la clase accor
 desplegarAcordion2.classList.add ("collapsed") //le agrego la clase collapsed con el classList.add para que se despliegue el acordeon
 desplegarAcordion2.type = "button" //le doy la propiedad de boton al despliegue del acordeon con el type = "button"
 desplegarAcordion2.setAttribute ("data-bs-toggle", "collapse") //le agrego el atributo collapse con el data-bs-toggle para desplegar el acordeon usando un setAttribute 
-desplegarAcordion2.setAttribute ("data-bs-target", "#collapseFour") //le agrego el id collapseTwo con el data-bs-target para especificar el id del acoredeon a despleguar usando un setAttribute
+desplegarAcordion2.setAttribute ("data-bs-target", "#collapseFour") //le agrego el id collapseFour con el data-bs-target para especificar el id del acoredeon a despleguar usando un setAttribute
 desplegarAcordion2.innerText = "Buzos" //le doy el titulo al acordeon con el innerText
 //Main 2
 const mainAcordion2 = document.createElement ("div") //creo un div main con el createElement
@@ -106,7 +107,7 @@ desplegarAcordion3.classList.add ("accordion-button") //le agrego la clase accor
 desplegarAcordion3.classList.add ("collapsed") //le agrego la clase collapsed con el classList.add para que se despliegue el acordeon
 desplegarAcordion3.type = "button" //le doy la propiedad de boton al despliegue del acordeon con el type = "button"
 desplegarAcordion3.setAttribute ("data-bs-toggle", "collapse") //le agrego el atributo collapse con el data-bs-toggle para desplegar el acordeon usando un setAttribute 
-desplegarAcordion3.setAttribute ("data-bs-target", "#collapseFive") //le agrego el id collapseTwo con el data-bs-target para especificar el id del acoredeon a despleguar usando un setAttribute
+desplegarAcordion3.setAttribute ("data-bs-target", "#collapseFive") //le agrego el id collapseFive con el data-bs-target para especificar el id del acoredeon a despleguar usando un setAttribute
 desplegarAcordion3.innerText = "Zapatillas" //le doy el titulo al acordeon con el innerText
 //Main 3
 const mainAcordion3 = document.createElement ("div") //creo un div main con el createElement
@@ -134,7 +135,7 @@ headerAcordion3.appendChild (desplegarAcordion3) // inserto el boton de desplieg
 itemAcordion3.append (headerAcordion3, mainAcordion3) //inserto el header del acordeon y la estructura del acordeon al item del acordeon con el append
 
 
-//<------------------ACCESORIOS------------------>
+//<------------------GORRAS------------------>
 //Item 4
 const itemAcordion4 = document.createElement ("div") //creo un div con el item del acordeon usando el createElement
 itemAcordion4.classList.add ("accordion-item") //le agrego la clase accordion-item con el classList.add
@@ -150,8 +151,8 @@ desplegarAcordion4.classList.add ("accordion-button") //le agrego la clase accor
 desplegarAcordion4.classList.add ("collapsed") //le agrego la clase collapsed con el classList.add para que se despliegue el acordeon
 desplegarAcordion4.type = "button" //le doy la propiedad de boton al despliegue del acordeon con el type = "button"
 desplegarAcordion4.setAttribute ("data-bs-toggle", "collapse") //le agrego el atributo collapse con el data-bs-toggle para desplegar el acordeon usando un setAttribute 
-desplegarAcordion4.setAttribute ("data-bs-target", "#collapseSix") //le agrego el id collapseTwo con el data-bs-target para especificar el id del acoredeon a despleguar usando un setAttribute
-desplegarAcordion4.innerText = "Accesorios" //le doy el titulo al acordeon con el innerText
+desplegarAcordion4.setAttribute ("data-bs-target", "#collapseSix") //le agrego el id collapseSix con el data-bs-target para especificar el id del acoredeon a despleguar usando un setAttribute
+desplegarAcordion4.innerText = "Gorras" //le doy el titulo al acordeon con el innerText
 //Main 4
 const mainAcordion4 = document.createElement ("div") //creo un div main con el createElement
 mainAcordion4.id = "collapseSix" //le doy la ID al main con el id = "collapseThree"
@@ -162,14 +163,14 @@ mainAcordion4.setAttribute ("data-bs-parent", "#accordionContenedor") //lo empar
 const bodyAcordion4 = document.createElement ("div")// creo el div inner con el createElement
 bodyAcordion4.classList.add("accordion-body") //le agrego la clase accordion-body con classList.add
 const p_4 = document.createElement ("p") //creo el p con el createElement
-p_4.innerText = "Tenemos una coleccion limitada y exclusiva de accesorios (joyas, gorros, gorras, perfumes, etc.), con originalidad y calidad 100% aseguradas." //le inserto el contenido de texto al p con el innerText
+p_4.innerText = "Tenemos todo tipo de gorras, de cualquier marca y material de tu preferencia, con originalidad y calidad 100% aseguradas." //le inserto el contenido de texto al p con el innerText
 const p2_4 = document.createElement ("p") //creo el segundo p con el createElement
 const botonAccesorios = document.createElement ("button") //creo el boton para ver el producto con el createElement
 botonAccesorios.classList.add ("btn") //le agrego la clase btn con el classList.add
 botonAccesorios.classList.add ("btn-danger") //le agrego la clase btn-danger con el classList.add
 botonAccesorios.type = "button" //le doy la propiedad de boton con el type = "button"
 botonAccesorios.onclick = function () {window.open ("https://sitio.com", "_blank")} //le agrego la url vacia a la cual redirigirme con el onclick = function () {window.open ("url", "_blank")}
-botonAccesorios.innerText = "Ver accesorios" //le inserto el contenido de texto con el innerText
+botonAccesorios.innerText = "Ver gorras" //le inserto el contenido de texto con el innerText
 //Insercion del body + header 4
 p2_4.appendChild (botonAccesorios) //inserto el boton de redireccion al p2 con el appendChild
 bodyAcordion4.append (p_4, p2_4) //inserto ambos p's al cuerpo del acordeon con el append (no appendChild, ya que el appendChild solo me permetiria insertar un objeto, en cambio el append me permite agregar los que yo quiera)
