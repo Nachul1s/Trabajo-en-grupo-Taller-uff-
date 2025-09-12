@@ -10,7 +10,6 @@ git add . /guardamos los archivos locales
 
 git commit -m "add: comentario "
 
-
 git push / sube cambios a GitHub
 
 git remote add (nombre ) URLdelRepo  /para vincular mi proyecto local con un repositorio en la Nube 
@@ -24,7 +23,6 @@ git branch nombreRama
 git checkout nombreRAma / me muevo de una rama a la otra
 
 git Branch -d nobreRama / para eliminar una rama
-
 
 git push --set-upstrean origin nombreRama / es para publicar una rama en github
 
