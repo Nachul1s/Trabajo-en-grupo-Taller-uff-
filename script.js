@@ -22,7 +22,7 @@ class Persona {
     this.productos = [];
   }
 
-  agregarProductos(producto) {
+   agregarProductos(producto) {
     this.productos.push(producto);
   }
 
@@ -59,6 +59,7 @@ class Persona {
   }
 }
 
+
 const prod1 = new Producto(1, "camisa", "nike", "https://http2.mlstatic.com/D_NQ_NP_2X_661329-MLA49700066534_042022-F.webp", "camisa deportiva", 15000, 10)
 const prod2 = new Producto(2, "pantalon", "adidas", "https://http2.mlstatic.com/D_NQ_NP_2X_661329-MLA49700066534_042022-F.webp", "pantalon deportivo", 20000, 5)
 
@@ -75,16 +76,7 @@ let persona1 = new Persona(
 let row = document.querySelector("#rowTarjeta")
 
 //esto lo voy a borrar
-let boton = document.querySelector("#button")
-// boton.textContent = "Enviar"
-boton.style.backgroundColor = "blue"
-boton.style.color = "White"
-row.appendChild(boton)
-
-boton.addEventListener("click", function () {
-  persona1.agregarProductos(prod1);
-  mostrar();
-});
+ 
 //esto tambien 
 
 
@@ -137,7 +129,7 @@ function mostrar() {
        persona1.agregarProductos(prod1);
        mostrar();
      }); */
-     // esto lo voy a usar  cuando marroc termine
+    // esto lo voy a usar  cuando marroc termine
 
     td7.appendChild(botonEliminar);
 
@@ -151,31 +143,33 @@ function mostrar() {
 let tbody = document.querySelector("#tbody");
 /* let total = document.querySelector("#total");
 let subtotal = document.querySelector("#subtotal");         */
-class Indumentaria{ 
-    constructor(precio,id,stock,titulo,descripcion,img,tipo) {
-        this.precio = precio;
-        this.id = id;
-        this.stock = stock;
-        this.titulo = titulo;
-        this.descripcion = descripcion;
-        this.tipo = tipo;
-    }
+class Indumentaria {
+  constructor(precio, id, stock, titulo, descripcion, img, tipo) {
+    this.precio = precio;
+    this.id = id;
+    this.stock = stock;
+    this.titulo = titulo;
+    this.descripcion = descripcion;
+    this.tipo = tipo;
+  }
 }
 
 let prendas = [
-    new Indumentaria(27000,1,12,"Remeras Mangas cortas","$20.500 solo EFECTIVO","Remera"),
-    new Indumentaria(18000,2,15,"Remera Jordan","$12.000 solo EFECTIVO","Remera"),
-    new Indumentaria(18000,3,17,"Remera Jordan Flight","$16.500 solo EFECTIVO","Remera"),
-    new Indumentaria(37000,4,6,"Campera Nike Tech Comb","$25.500 solo EFECTIVO","Campera"),
-    new Indumentaria(48000,5,7,"Campera Puma Ferrari","$36.000 solo EFECTIVO","Campera"),
-    new Indumentaria(48000,6,10,"Campera Puma Mercedes Benz","$36.000 solo EFECTIVO","Campera"),
-    new Indumentaria(30000,7,24,"Buzo Corteiz","$28.500 solo EFECTIVO","Buzo"),
-    new Indumentaria(270000,8,5,"Zapatillas Jordan Retro 11","$165.000 solo EFECTIVO","Zapatilla"),
-    new Indumentaria(70000,9,18,"Gorra Jordan Chapita","$67.000 solo EFECTIVO","Gorra")
+  new Indumentaria(27000, 1, 12, "Remeras Mangas cortas", "$20.500 solo EFECTIVO", "Remera"),
+  new Indumentaria(18000, 2, 15, "Remera Jordan", "$12.000 solo EFECTIVO", "Remera"),
+  new Indumentaria(18000, 3, 17, "Remera Jordan Flight", "$16.500 solo EFECTIVO", "Remera"),
+  new Indumentaria(37000, 4, 6, "Campera Nike Tech Comb", "$25.500 solo EFECTIVO", "Campera"),
+  new Indumentaria(48000, 5, 7, "Campera Puma Ferrari", "$36.000 solo EFECTIVO", "Campera"),
+  new Indumentaria(48000, 6, 10, "Campera Puma Mercedes Benz", "$36.000 solo EFECTIVO", "Campera"),
+  new Indumentaria(30000, 7, 24, "Buzo Corteiz", "$28.500 solo EFECTIVO", "Buzo"),
+  new Indumentaria(270000, 8, 5, "Zapatillas Jordan Retro 11", "$165.000 solo EFECTIVO", "Zapatilla"),
+  new Indumentaria(70000, 9, 18, "Gorra Jordan Chapita", "$67.000 solo EFECTIVO", "Gorra")
+
+
 ]
 
 // Tarjetas 
- // --------------------------------------------------------------------------------------------//
+// --------------------------------------------------------------------------------------------//
 let contenedor = document.getElementById("contenedor")
 
 let col1 = document.createElement("div")
@@ -215,7 +209,7 @@ let button = document.createElement("button")
 button.classList.add("btn")
 button.classList.add("btn-primary")
 button.textContent = "Agregar producto"
-
+button.classList.add("btn-comprar")
 cardBody.appendChild(button)
 
 col1.appendChild(card)
@@ -259,7 +253,7 @@ let button2 = document.createElement("button")
 button2.classList.add("btn")
 button2.classList.add("btn-primary")
 button2.textContent = "Agregar producto"
-
+button2.classList.add("btn-comprar")
 cardBody2.appendChild(button2)
 
 col2.appendChild(card2)
@@ -303,6 +297,7 @@ let button3 = document.createElement("button")
 button3.classList.add("btn")
 button3.classList.add("btn-primary")
 button3.textContent = "Agregar producto"
+button3.classList.add("btn-comprar")
 
 cardBody3.appendChild(button3)
 
@@ -348,6 +343,7 @@ let button4 = document.createElement("button")
 button4.classList.add("btn")
 button4.classList.add("btn-primary")
 button4.textContent = "Agregar producto"
+button4.classList.add("btn-comprar")
 
 cardBody4.appendChild(button4)
 
@@ -394,6 +390,7 @@ let button5 = document.createElement("button")
 button5.classList.add("btn")
 button5.classList.add("btn-primary")
 button5.textContent = "Agregar producto"
+button5.classList.add("btn-comprar")
 
 cardBody5.appendChild(button5)
 
@@ -438,6 +435,7 @@ let button6 = document.createElement("button")
 button6.classList.add("btn")
 button6.classList.add("btn-primary")
 button6.textContent = "Agregar producto"
+button6.classList.add("btn-comprar")
 
 cardBody6.appendChild(button6)
 
@@ -482,6 +480,7 @@ let button7 = document.createElement("button")
 button7.classList.add("btn")
 button7.classList.add("btn-primary")
 button7.textContent = "Agregar producto"
+button7.classList.add("btn-comprar")
 
 cardBody7.appendChild(button7)
 
@@ -526,7 +525,7 @@ let button8 = document.createElement("button")
 button8.classList.add("btn")
 button8.classList.add("btn-primary")
 button8.textContent = "Agregar producto"
-
+button8.classList.add("btn-comprar")  
 cardBody8.appendChild(button8)
 
 col8.appendChild(card8)
@@ -570,9 +569,9 @@ let button9 = document.createElement("button")
 button9.classList.add("btn")
 button9.classList.add("btn-primary")
 button9.textContent = "Agregar producto"
-
+button9.classList.add("btn-comprar")
 cardBody9.appendChild(button9)
 
 col9.appendChild(card9)
 
-contenedor.append(col1,col2,col3,col4,col5,col6,col7,col8,col9)
+contenedor.append(col1, col2, col3, col4, col5, col6, col7, col8, col9)
