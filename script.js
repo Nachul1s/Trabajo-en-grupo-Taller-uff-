@@ -22,7 +22,7 @@ class Persona {
     this.productos = [];
   }
 
-   agregarProductos(producto) {
+  agregarProductos(producto) {
     this.productos.push(producto);
   }
 
@@ -76,7 +76,7 @@ let persona1 = new Persona(
 let row = document.querySelector("#rowTarjeta")
 
 //esto lo voy a borrar
- 
+
 //esto tambien 
 
 
@@ -164,8 +164,6 @@ let prendas = [
   new Indumentaria(30000, 7, 24, "Buzo Corteiz", "$28.500 solo EFECTIVO", "Buzo"),
   new Indumentaria(270000, 8, 5, "Zapatillas Jordan Retro 11", "$165.000 solo EFECTIVO", "Zapatilla"),
   new Indumentaria(70000, 9, 18, "Gorra Jordan Chapita", "$67.000 solo EFECTIVO", "Gorra")
-
-
 ]
 
 // Tarjetas 
@@ -525,7 +523,7 @@ let button8 = document.createElement("button")
 button8.classList.add("btn")
 button8.classList.add("btn-primary")
 button8.textContent = "Agregar producto"
-button8.classList.add("btn-comprar")  
+button8.classList.add("btn-comprar")
 cardBody8.appendChild(button8)
 
 col8.appendChild(card8)
