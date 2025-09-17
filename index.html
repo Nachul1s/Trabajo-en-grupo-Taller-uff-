@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -116,6 +116,46 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <title>MAVEN - Tienda de ropa online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <------------------CAMISETAS------------------>
+    <div class="accordion" id="accordionContenedor">
+        <h3 class="mx-2 mt-2">Categorias de ropa:</h3>
+        <div class="accordion-item w-50 mt-2 mb-2 mx-2">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                    Camisetas
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionContenedor">
+                <div class="accordion-body">
+                    <p>Tenemos todo tipo de camisetas, de cualquier marca y material de tu preferencia, con originalidad y calidad 100% aseguradas.</p>
+                    <p><button class= "btn btn-danger" type="button" onclick="window.open(`https://sitio.com`, `_blank`)">Ver camisetas</button></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <------------------PANTALONES------------------>
+        <div class="accordion-item w-50 mt-2 mb-2 mx-2">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                    Pantalones
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionContenedor">
+                <div class="accordion-body">
+                    <p>Tenemos todo tipo de pantalones, de cualquier marca y material de tu preferencia, con originalidad y calidad 100% aseguradas.</p>
+                    <p><button class= "btn btn-danger" type="button" onclick="window.open(`https://sitio.com`, `_blank`)">Ver pantalones</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>
