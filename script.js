@@ -572,36 +572,53 @@ contenedor.append(col1, col2, col3, col4, col5, col6, col7, col8, col9)
 
 let table = document.querySelector("#tablaranking")
 
+
 let tr1 = document.createElement("tr")
 let th1 = document.createElement("th")
 th1.scope = "row"
 th1.textContent = "1"
-let td1 = document.createElement("td")
-td1.textContent = "Remeras Mangas cortas"
-let td2 = document.createElement("td")
+let td1=document.createElement("td")
+td1.textContent="Zapatillas Jordan Retro 11"
+let td2=document.createElement("td")
 td2.appendChild(imagen8)
 td2.style.width = "100px"
-let td3 = document.createElement("td")
-td3.textContent = "27.000"
-tr1.append(th1, td1, td2, td3)
+let td3=document.createElement("td")
+td3.textContent="27.000"
+tr1.append(th1,td1,td2,td3)
 
 
 
 let tr2 = document.createElement("tr")
 let th2 = document.createElement("th")
 th2.scope = "row"
-th2.textContent = "1"
-let td11 = document.createElement("td")
-td11.textContent = "Remeras Mangas cortas"
-let td22 = document.createElement("td")
+th2.textContent = "2"
+let td11=document.createElement("td")
+td11.textContent="Gorra jordan chapita"
+let td22=document.createElement("td")
 td22.appendChild(imagen9)
 td22.style.width = "100px"
-let td33 = document.createElement("td")
-td33.textContent = "27.000"
-tr2.append(th2, td11, td22, td33)
+let td33=document.createElement("td")
+td33.textContent="$70.000"
+tr2.append(th2,td11,td22,td33)
 
 
-table.append(tr1, tr2)
+table.append(tr1,tr2)
+
+let tr3 = document.createElement("tr")
+let th3 = document.createElement("th")
+th3.scope = "row"
+th3.textContent = "3"
+let td12=document.createElement("td")
+td12.textContent="buzo corteiz"
+let td222=document.createElement("td")
+td222.appendChild(imagen7)
+td222.style.width = "100px"
+let td333=document.createElement("td")
+td333.textContent="$28.500"
+tr3.append(th3,td12,td222,td333)
+
+
+table.append(tr1,tr2,tr3)
 
 
 //Div contenedor
